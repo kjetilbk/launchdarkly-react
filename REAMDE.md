@@ -21,3 +21,23 @@ import
 
 useFeatureFlag()
 ```
+
+## Hacking
+
+To build, run the following command:
+
+```bash
+$ yarn build
+```
+
+To verify formatting:
+
+```bash
+$ yarn prettier
+```
+
+To run the tests:
+
+```bash
+$ yarn test
+```

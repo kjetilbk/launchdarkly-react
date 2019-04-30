@@ -9,12 +9,25 @@
   "scripts": {
     "clean": "rm -rf dist/*",
     "build": "yarn clean && tsc",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --check src/**/*.{ts,tsx}"
   },
   "devDependencies": {
+    "husky": "^2.1.0",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
     "typescript": "^3.4.5"
   },
   "prettier": {
     "printWidth": 80
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "yarn prettier"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
