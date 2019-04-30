@@ -1,0 +1,20 @@
+{
+  "name": "@spacemakerai/launchdarkly-react",
+  "version": "0.1.0",
+  "description": "Spacemaker LaunchDarkly React library",
+  "main": "lib/index.js",
+  "author": "Håkon Åmdal <hakon@aamdal.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "build": "yarn clean && tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  },
+  "prettier": {
+    "printWidth": 80
+  }
+}
