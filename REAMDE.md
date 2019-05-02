@@ -24,6 +24,15 @@ useFeatureFlag()
 
 ## Hacking
 
+To run a playground environment, set up with the Spacemaker `launchdarkly-react` project (client ID:
+`5cca878ff65c62082a9b3378`), run the following command:
+
+```bash
+$ yarn start
+```
+
+Server is then available at `http://localhost:8080/`.
+
 To build, run the following command:
 
 ```bash
