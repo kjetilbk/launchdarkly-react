@@ -1,7 +1,7 @@
 import { initialize, LDUser, LDClient } from "ldclient-js";
 import { useState } from "react";
 
-type Client = {
+export type Client = {
   id: string;
   c?: LDClient;
 };
