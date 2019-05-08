@@ -45,10 +45,10 @@ Add to stage:
 $ git add .
 ```
 
-Create a new version:
+Create a new version and publish to NPM registry:
 
-```bash
-$ yarn version
+```
+$ yarn publish
 ```
 
 Push your changes:
@@ -56,12 +56,6 @@ Push your changes:
 ```
 $ git push origin master
 $ git push --tags
-```
-
-Publish to NPM registry:
-
-```
-$ yarn publish
 ```
 
 ## Hacking
