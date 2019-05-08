@@ -1,1 +1,2 @@
-export declare const useVariation: (_clientId: string, _user: string, _flag: string, defaultValue: any) => any;
+import { LDUser } from "ldclient-js";
+export declare const useVariation: (clientId: string, user: LDUser, flag: string, defaultValue: any) => any;
