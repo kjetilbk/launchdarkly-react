@@ -39,8 +39,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "dependencies": {
-    "ldclient-js": "^2.10.2"
   }
 }

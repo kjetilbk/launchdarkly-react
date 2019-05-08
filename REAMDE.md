@@ -33,8 +33,7 @@ const Component = () => {
 
 ## Hacking
 
-To run a playground environment, set up with the Spacemaker `launchdarkly-react` project (client ID:
-`5cca878ff65c62082a9b3378`), run the following command:
+To run a playground environment, run the following command:
 
 ```bash
 $ CLIENT_ID=<your-client-id> yarn start
