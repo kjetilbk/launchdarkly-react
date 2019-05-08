@@ -1,8 +1,11 @@
 {
   "name": "@spacemakerai/launchdarkly-react",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Spacemaker LaunchDarkly React library",
-  "main": "lib/index.js",
+  "repository": "git@github.com:spacemakerai/launchdarkly-react.git",
+  "main": "index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "Håkon Åmdal <hakon@aamdal.com>",
   "license": "MIT",
   "private": false,
