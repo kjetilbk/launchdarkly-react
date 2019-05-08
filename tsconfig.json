@@ -1,8 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": "src/",
-    "paths": { "*": ["types/*"] },
     "jsx": "react",
     "declaration": true /* emit .d.ts */,
     "target": "es2015" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
@@ -25,6 +22,10 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true
   },
-  "include": ["src/lib"],
-  "exclude": ["**/*.test.*"]
+  "include": [
+    "src/lib",
+    "node_modules/ldclient-js/typings.d.ts",
+    "node_modules/ldclient-js-common/typings.d.ts"
+  ],
+  "exclude": ["*.js"]
 }

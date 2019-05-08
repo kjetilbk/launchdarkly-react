@@ -1,8 +1,15 @@
+import { initialize, LDUser } from "ldclient-js";
+import { useState } from "react";
 export const useVariation = (
-  _clientId: string,
-  _user: string,
-  _flag: string,
+  clientId: string,
+  user: LDUser,
+  flag: string,
   defaultValue: any
 ) => {
-  return defaultValue;
+  const [val, setVal] = useState(defaultValue);
+  const client = initialize(clientId, user);
+  client.on("initialized", () => {
+    setVal(client.variation(flag, defaultValue));
+  });
+  return val;
 };

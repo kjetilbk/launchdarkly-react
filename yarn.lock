@@ -349,13 +349,6 @@
   resolved "https://registry.npmjs.org/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
   integrity sha512-hRJD2ahnnpLgsj6KWMYSrmXkM3rm2Dl1qkx6IOFD5FnuNPXJIG5L0dhgKXCYTRMGzU4n0wImQ/xfmRc4POUFlg==
 
-"@types/ldclient-js@^1.1.11":
-  version "1.1.11"
-  resolved "https://registry.npmjs.org/@types/ldclient-js/-/ldclient-js-1.1.11.tgz#28e1a2814611a4bdbfa6a2e5ba6d31ca28706bed"
-  integrity sha512-dZ+OWAncf4eUA9sLfZJ/hxW249Pw3MaLGtaNYBQR+8fjFKeoR3TA/Yx332D286vnigbuWIta1rXnjI/sLU3rsA==
-  dependencies:
-    ldclient-js "*"
-
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -3617,7 +3610,7 @@ ldclient-js-common@^2.10.2:
     fast-deep-equal "2.0.1"
     uuid "3.3.2"
 
-ldclient-js@*, ldclient-js@^2.10.2:
+ldclient-js@^2.10.2:
   version "2.10.2"
   resolved "https://registry.npmjs.org/ldclient-js/-/ldclient-js-2.10.2.tgz#7e9a72748aad4ed7be33893105cf3546a14f0d9f"
   integrity sha512-6SpSbp91jBw+ZRKUPg2E1euegFLpwhD+wvnJhZ9NyXQH6F9jMeTEkB8mB1DlMQOUyU7NF1FNIrmF9y20rKfPXA==
