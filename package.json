@@ -11,7 +11,8 @@
     "clean": "rm -rf dist/*",
     "build": "yarn clean && tsc",
     "test": "jest",
-    "prettier": "prettier --check src/**/*.{ts,tsx}"
+    "prettier:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier:write": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "devDependencies": {
     "@types/react": "^16.8.15",
@@ -32,11 +33,14 @@
     "printWidth": 80
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": "yarn prettier"
+    "src/**/*.{ts,tsx}": "yarn run prettier"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "ldclient-js": "^2.10.2"
   }
 }

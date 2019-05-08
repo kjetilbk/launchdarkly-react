@@ -15,11 +15,20 @@ $ yarn install @spacemakerai/launchdarkly-react
 
 Usage:
 
-```ts
+```tsx
+import React from "react";
+import { useVariation } from "@spacemakerai/launchdarkly-react";
 
-import
+const Component = () => {
+  const feature = useVariation(CLIENT_ID, USER, "feature", false);
 
-useFeatureFlag()
+  return (
+    <>
+      <h1>My Component</h1>
+      {feature && <p>My feature flagged feature</p>}
+    </>
+  );
+};
 ```
 
 ## Hacking
@@ -28,7 +37,7 @@ To run a playground environment, set up with the Spacemaker `launchdarkly-react`
 `5cca878ff65c62082a9b3378`), run the following command:
 
 ```bash
-$ yarn start
+$ CLIENT_ID=<your-client-id> yarn start
 ```
 
 Server is then available at `http://localhost:8080/`.
@@ -42,7 +51,13 @@ $ yarn build
 To verify formatting:
 
 ```bash
-$ yarn prettier
+$ yarn prettier:check
+```
+
+To fix formatting:
+
+```bash
+$ yarn prettier:write
 ```
 
 To run the tests:

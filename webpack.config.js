@@ -9,6 +9,9 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"]
+  },
   entry: "./src/playground.tsx",
   output: {
     filename: "index.js",
