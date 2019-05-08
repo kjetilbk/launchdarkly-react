@@ -31,6 +31,39 @@ const Component = () => {
 };
 ```
 
+## Deployng
+
+Update `CHANGELOG.md` and build:
+
+```bash
+$ yarn bulid
+```
+
+Add to stage:
+
+```bash
+$ git add .
+```
+
+Create a new version:
+
+```bash
+$ yarn version
+```
+
+Push your changes:
+
+```
+$ git push origin master
+$ git push --tags
+```
+
+Publish to NPM registry:
+
+```
+$ yarn publish
+```
+
 ## Hacking
 
 To run a playground environment, run the following command:
