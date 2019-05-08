@@ -7,7 +7,6 @@ jobs:
       - checkout
       - run: yarn install --frozen-lockfile
       - run: yarn prettier:check
-      - run: yarn test
       - run: yarn build
 workflows:
   version: 2
