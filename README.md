@@ -17,10 +17,15 @@ Usage:
 
 ```tsx
 import React from "react";
-import { useVariation } from "@spacemakerai/launchdarkly-react";
+import { useVariation, createClient } from "@spacemakerai/launchdarkly-react";
 
 const Component = () => {
-  const feature = useVariation(CLIENT_ID, USER, "feature", false);
+  const client = createClient(clientId);
+  const user = {
+    key: "foo@bar.com",
+    email: "foo@bar.com"
+  };
+  const feature = useVariation(client, USER, "feature", false);
 
   return (
     <>

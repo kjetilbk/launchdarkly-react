@@ -1,15 +1,31 @@
-import { initialize, LDUser } from "ldclient-js";
+import { initialize, LDUser, LDClient } from "ldclient-js";
 import { useState } from "react";
+
+type Client = {
+  id: string;
+  c?: LDClient;
+};
+
+//type Context = { [clientId: string]: LDClient };
+
+export function createClient(clientId: string): Client {
+  // TODO: Consider initilazining here
+  return {
+    id: clientId
+  };
+}
+
 export const useVariation = (
-  clientId: string,
+  client: Client,
   user: LDUser,
   flag: string,
   defaultValue: any
 ) => {
   const [val, setVal] = useState(defaultValue);
-  const client = initialize(clientId, user);
-  client.on("initialized", () => {
-    setVal(client.variation(flag, defaultValue));
+  const ldclient = client.c || initialize(client.id, user);
+  client.c = ldclient;
+  ldclient.waitForInitialization().then(() => {
+    setVal(ldclient.variation(flag, defaultValue));
   });
   return val;
 };

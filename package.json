@@ -1,6 +1,6 @@
 {
   "name": "@spacemakerai/launchdarkly-react",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Spacemaker LaunchDarkly React library",
   "repository": "git@github.com:spacemakerai/launchdarkly-react.git",
   "main": "index.js",
